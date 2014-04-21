@@ -15,6 +15,13 @@ autoload -Uz promptinit
 promptinit
 prompt powerline
 
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'cursor' \
+  'root'
+      
 #zsh history params
 setopt SHARE_HISTORY
 setopt HIST_IGNORE_DUPS
@@ -43,3 +50,5 @@ alias findall="find . -print0 | xargs -0 grep \"\$@\""
 
 # bind ESC to clear the command line
 bindkey "\e" kill-whole-line
+
+# make shift + arrows select text
