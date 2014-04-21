@@ -11,4 +11,35 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+autoload -Uz promptinit
+promptinit
+prompt powerline
 
+#zsh history params
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt EXTENDED_HISTORY
+
+# Plumzi Aliases
+alias processWavFilesOld='~/Dev/Plumzi/Plumzi_Moai/scripts/processWavFiles.py'
+alias processWavFiles='~/Dev/Plumzi/Plumzi_Moai/scripts/processWavFilesV2.py'
+alias texturetool='/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/texturetool\
+'
+alias BulkProcess='~/Dev/Plumzi/Plumzi_Conditioner/src/BulkProcess.py'
+alias SingleProcess='~/Dev/Plumzi/Plumzi_Conditioner/src/SingleProcess.py'
+alias SingleProcessPVR='~/Dev/Plumzi/Plumzi_Conditioner/src/SingleProcessPVR.py'
+alias SingleProcessVideo='~/Dev/Plumzi/Plumzi_Conditioner/src/SingleProcessVideo.py'
+alias SingleProcessPVRMatrix='~/Dev/Plumzi/Plumzi_Conditioner/src/SingleProcessPVRMatrix.py'
+alias SingleProcessMatrix='~/Dev/Plumzi/Plumzi_Conditioner/src/SingleProcessMatrix.py'
+alias BulkProcessPVR='~/Dev/Plumzi/Plumzi_Conditioner/src/BulkProcessPVR.py'
+alias BulkProcessMatrix='~/Dev/Plumzi/Plumzi_Conditioner/src/BulkProcessMatrix.py'
+alias BulkProcessPVRMatrix='~/Dev/Plumzi/Plumzi_Conditioner/src/BulkProcessPVRMatrix.py'
+alias SyncProcessTree='~/Dev/Plumzi/Plumzi_Conditioner/src/SyncProcessTree.py'
+alias normalize_names='~/Dev/Plumzi/Plumzi_Moai/scripts/normalize_names.py'
+alias SyncProcessWav='~/Dev/Plumzi/Plumzi_Moai/scripts/syncProcessWav.py'
+
+alias findall="find . -print0 | xargs -0 grep \"\$@\""
+
+# bind ESC to clear the command line
+bindkey "\e" kill-whole-line
