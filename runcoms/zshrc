@@ -28,6 +28,9 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt EXTENDED_HISTORY
 
+#additional PATH
+export PATH=$PATH:~/Scripts:~/bento:/usr/local/mysql/bin:/sw/bin:/sw/sbin:/opt/local/bin:/opt/local/sbin:/mnt/software/shotgun/studio
+
 # Plumzi Aliases
 alias processWavFilesOld='~/Dev/Plumzi/Plumzi_Moai/scripts/processWavFiles.py'
 alias processWavFiles='~/Dev/Plumzi/Plumzi_Moai/scripts/processWavFilesV2.py'
