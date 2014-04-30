@@ -1,0 +1,1 @@
+Install these fonts to see proper terminal symbols like the lightning, the triangle arrow, etc
