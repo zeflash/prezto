@@ -17,7 +17,7 @@ version is 4.3.11.
 
   2. Clone the repository:
 
-        git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+        git clone --recursive https://github.com/zeflash/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
@@ -30,8 +30,10 @@ version is 4.3.11.
   4. Set Zsh as your default shell:
 
         chsh -s /bin/zsh
+  
+  5. Install provided fonts, import solarized theme for terminal (osx)
 
-  5. Open a new Zsh terminal window or tab.
+  6. Open a new Zsh terminal window or tab.
 
 ### Troubleshooting
 
