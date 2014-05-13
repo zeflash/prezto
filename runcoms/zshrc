@@ -13,7 +13,7 @@ fi
 # Customize to your needs...
 autoload -Uz promptinit
 promptinit
-prompt powerline
+prompt zeflash
 
 zstyle ':prezto:module:syntax-highlighting' highlighters \
   'main' \
@@ -47,7 +47,7 @@ alias BulkProcessMatrix='~/Dev/Plumzi/Plumzi_Conditioner/src/BulkProcessMatrix.p
 alias BulkProcessPVRMatrix='~/Dev/Plumzi/Plumzi_Conditioner/src/BulkProcessPVRMatrix.py'
 alias SyncProcessTree='~/Dev/Plumzi/Plumzi_Conditioner/src/SyncProcessTree.py'
 alias normalize_names='~/Dev/Plumzi/Plumzi_Moai/scripts/normalize_names.py'
-alias SyncProcessWav='~/Dev/Plumzi/Plumzi_Moai/scripts/syncProcessWav.py'
+alias SyncProcessWav='~/Dev/Plumzi/Plumzi_Conditioner/src/SyncProcessWav.py'
 
 alias findall="find . -print0 | xargs -0 grep \"\$@\""
 
